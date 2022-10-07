@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (5.0.1)
+  - SwiftyGif (5.4.2)
+
+DEPENDENCIES:
+  - SnapKit
+  - SwiftyGif
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyGif: dec758a9dd3d278e5a855dbf279bf062c923c387
+
+PODFILE CHECKSUM: ba8d2e1bd8b766195b0d5cc810e13b97c75c7039
+
+COCOAPODS: 1.11.2

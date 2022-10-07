@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="67" id="DhB-ix-9LK" customClass="CellWithMatches" customModule="Matches" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DhB-ix-9LK" id="U1y-fF-srF">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зенит" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oat-GL-K1Y">
+                        <rect key="frame" x="21" y="9" width="65" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fEH-s2-Pfd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Спартак" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sP0-Kx-fyW">
+                        <rect key="frame" x="264" y="9" width="135" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="enE-xa-jr7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR0-SV-HLa">
+                        <rect key="frame" x="191.5" y="8" width="31" height="28"/>
+                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AR0-SV-HLa" firstAttribute="centerX" secondItem="U1y-fF-srF" secondAttribute="centerX" id="79H-NL-S5Z"/>
+                    <constraint firstItem="AR0-SV-HLa" firstAttribute="centerY" secondItem="U1y-fF-srF" secondAttribute="centerY" id="9ZS-C3-K8B"/>
+                    <constraint firstItem="sP0-Kx-fyW" firstAttribute="top" secondItem="U1y-fF-srF" secondAttribute="top" constant="9" id="A5b-wW-7kc"/>
+                    <constraint firstAttribute="bottom" secondItem="oat-GL-K1Y" secondAttribute="bottom" constant="14" id="BWY-yE-0Vk"/>
+                    <constraint firstAttribute="bottom" secondItem="sP0-Kx-fyW" secondAttribute="bottom" constant="14" id="D3K-Km-l01"/>
+                    <constraint firstItem="sP0-Kx-fyW" firstAttribute="leading" secondItem="AR0-SV-HLa" secondAttribute="trailing" multiplier="0.8" constant="86" id="L8U-kE-C1r"/>
+                    <constraint firstItem="oat-GL-K1Y" firstAttribute="leading" secondItem="U1y-fF-srF" secondAttribute="leading" constant="21" id="OCy-VU-kgW"/>
+                    <constraint firstItem="AR0-SV-HLa" firstAttribute="bottom" secondItem="oat-GL-K1Y" secondAttribute="bottom" constant="6" id="Q7y-Jb-iOA"/>
+                    <constraint firstAttribute="trailing" secondItem="sP0-Kx-fyW" secondAttribute="trailing" constant="15" id="Vmk-qj-NmM"/>
+                    <constraint firstItem="sP0-Kx-fyW" firstAttribute="bottom" secondItem="AR0-SV-HLa" secondAttribute="bottom" constant="-6" id="eQp-zL-Mas"/>
+                    <constraint firstItem="oat-GL-K1Y" firstAttribute="top" secondItem="U1y-fF-srF" secondAttribute="top" constant="9" id="kkF-Ju-luu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ResultMatches" destination="AR0-SV-HLa" id="3T7-20-2Iu"/>
+                <outlet property="TeamOne" destination="oat-GL-K1Y" id="YFh-Vf-Eh9"/>
+                <outlet property="TeamTwo" destination="sP0-Kx-fyW" id="bnQ-tA-joZ"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="-149.33035714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
